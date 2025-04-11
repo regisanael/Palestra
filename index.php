@@ -162,7 +162,7 @@ $evento = [
                         </div>
                     </div>
                 </div>
-                <!-- Palestrante 3  -->
+                <!-- Palestrante 3 Rafael Couto -->
                 <div class="col-md-4">
                     <div class="card shadow service-card">
                         <div class="card-body text-center p-4">
