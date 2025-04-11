@@ -7,18 +7,7 @@ $palestrantes = [
     ["nome" => "Consultor em Cibersegurança Rafael Couto", "confirmado" => true],
     ["nome" => "Criadora de conteúdo Denise Fraga", "confirmado" => true]
 ];
-
-
-$evento = [
-    "nome" => "Start Inatel",
-    "data" => "14 a 19 de Abril de 2025",
-    "local" => "Status Eventos-Varginha",
-    "descrição" => "Evento focado para mostrar como funciona a Inatel e os nossos conteudos"
-]
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -139,11 +128,14 @@ $evento = [
                             <p class="card-text">Desenvolvendo estratégias personalizadas para impulsionar o crescimento
                                 e a rentabilidade da sua empresa.</p>
                             <a href="#" class="btn btn-outline-primary mt-3">Quem Sou</a>
-                            <?php foreach ($palestrantes as $palestante) {
-                                $status = $palestante['confirmado'] ? "Confirmado" : "Não Confirmado";
-                                echo "Nome: " . $palestrante['nome'] . "- Status: " . $status . "<br>";
-                            }
-                            ?>
+                            <?php foreach ($palestrantes as $palestra): ?>
+                                <p class="card-text"><?php echo $palestra['nome']; ?></p>
+                                <?php if ($palestra['confirmado']): ?>
+                                    <p class="text-success">Confirmado</p>
+                                <?php else: ?>
+                                    <p class="text-danger">Não Confirmado</p>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
@@ -155,10 +147,18 @@ $evento = [
                                 <i class="fas fa-users fa-2x"></i>
                             </div>
                             <img src="ricardo amorim 2.jfif" alt="">
-                            <h3 class="card-title h5 mb-3">Ricardo Amorim</h3>
+                            <h3 class="card-title h5 mb-3">Rafael Couto</h3>
                             <p class="card-text">Otimizamos o potencial da sua equipe com programas de desenvolvimento,
                                 treinamento e cultura organizacional.</p>
                             <a href="#" class="btn btn-outline-success mt-3">Quem Sou</a>
+                            <?php foreach ($palestrantes as $palestra): ?>
+                                <p class="card-text"><?php echo $palestra['nome']; ?></p>
+                                <?php if ($palestra['confirmado']): ?>
+                                    <p class="text-success">Confirmado</p>
+                                <?php else: ?>
+                                    <p class="text-danger">Não Confirmado</p>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
@@ -174,6 +174,14 @@ $evento = [
                             <p class="card-text">Guiamos sua empresa na jornada de transformação digital com soluções
                                 tecnológicas inovadoras.</p>
                             <a href="#" class="btn btn-outline-info mt-3">Quem Sou</a>
+                            <?php foreach ($palestrantes as $palestra): ?>
+                                <p class="card-text"><?php echo $palestra['nome']; ?></p>
+                                <?php if ($palestra['confirmado']): ?>
+                                    <p class="text-success">Confirmado</p>
+                                <?php else: ?>
+                                    <p class="text-danger">Não Confirmado</p>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
                         </div>
         
                         
@@ -209,6 +217,14 @@ $evento = [
                             <h3 class=>Leila Navarro</h3>
                             <p class="card-text">Ajudo sua empresa a conquistar seus objetivos.</p>
                             <a href="#" class="btn btn-outline-primary mt-3">Quem Sou</a>
+                            <?php foreach ($palestrantes as $palestra): ?>
+                                <p class="card-text"><?php echo $palestra['nome']; ?></p>
+                                <?php if ($palestra['confirmado']): ?>
+                                    <p class="text-success">Confirmado</p>
+                                <?php else: ?>
+                                    <p class="text-danger">Não Confirmado</p>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
@@ -223,6 +239,14 @@ $evento = [
                             <h3 class="card-title h5 mb-3">Denise Fraga</h3>
                             <p class="card-text">Elevamos sua empresa ao um nivel superior.</p>
                             <a href="#" class="btn btn-outline-success mt-3">Quem Sou</a>
+                            <?php foreach ($palestrantes as $palestra): ?>
+                                <p class="card-text"><?php echo $palestra['nome']; ?></p>
+                                <?php if ($palestra['confirmado']): ?>
+                                    <p class="text-success">Confirmado</p>
+                                <?php else: ?>
+                                    <p class="text-danger">Não Confirmado</p>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
@@ -237,6 +261,14 @@ $evento = [
                             <h3 class="card-title h5 mb-3">Maria Flávia Bastos</h3>
                             <p class="card-text">Ampliando seus conhecimentos e suas habilidades.</p>
                             <a href="#" class="btn btn-outline-info mt-3">Quem Sou</a>
+                            <?php foreach ($palestrantes as $palestra): ?>
+                                <p class="card-text"><?php echo $palestra['nome']; ?></p>
+                                <?php if ($palestra['confirmado']): ?>
+                                    <p class="text-success">Confirmado</p>
+                                <?php else: ?>
+                                    <p class="text-danger">Não Confirmado</p>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
                         </div>
 
 
@@ -263,8 +295,7 @@ $evento = [
             </div>
         </div>
 
-                      
-                    </div>
+                        
                 </div>
             </div>
         </div>
@@ -282,53 +313,24 @@ $evento = [
         <div class="row gy-4">
             <div class="col-md-4">
                 <h5 class="text-white mb-3">ConsultTech</h5>
-                <p class="text-muted mb-3">Transformando desafios em oportunidades de negócio desde 2013.</p>
-                <div class="social-icons">
-                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <h5 class="text-white mb-3">Links</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Home</a></li>
-                    <li class="mb-2"><a href="#servicos" class="text-muted text-decoration-none">Serviços</a></li>
-                    <li class="mb-2"><a href="#sobre" class="text-muted text-decoration-none">Sobre</a></li>
-                    <li class="mb-2"><a href="#equipe" class="text-muted text-decoration-none">Equipe</a></li>
-                    <li><a href="#contato" class="text-muted text-decoration-none">Contato</a></li>
-                </ul>
-            </div>
+                <?php
+$evento = array(
+    "nome" => "Start Inatel",
+    "data" => "14 a 19 de Abril de 2025",
+    "local" => "Status Eventos - Varginha",
+    "descrição" => "Evento focado para mostrar como funciona a Inatel e os nossos conteúdos"
+);
 
-            Análise do Código do Site
-            Nosso site profissional utiliza os seguintes elementos e recursos do Bootstrap:
-
-            <div class="col-md-3">
-                <h5 class="text-white mb-3">Serviços</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Estratégia de Negócios</a>
-                    </li>
-                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Gestão de Pessoas</a></li>
-                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Transformação Digital</a>
-                    </li>
-                    <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Consultoria Financeira</a>
-                    </li>
-                    <li><a href="#" class="text-muted text-decoration-none">Marketing Estratégico</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h5 class="text-white mb-3">Contato</h5>
-                <ul class="list-unstyled text-muted">
-                    <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Av. Paulista, 1000 - São Paulo</li>
-                    <li class="mb-2"><i class="fas fa-phone me-2"></i> (11) 5555-5555</li>
-                    <li class="mb-2"><i class="fas fa-envelope me-2"></i> contato@consulttech.com.br</li>
-                </ul>
-            </div>
+echo "Nome do evento: " . $evento["nome"] . "<br>";
+echo "Data: " . $evento["data"] . "<br>";
+echo "Local: " . $evento["local"] . "<br>";
+echo "Descrição: " . $evento["descrição"];
+?>
+               
         </div>
         <hr class="my-4 bg-secondary">
         <div class="text-center text-muted">
-            <small>&copy; 2025 ConsultTech. Todos os direitos reservados.</small>
+            <small>&copy; 2025 Developed By Régis Anael, Paulo Vinicius R.G, Hiago .</small>
         </div>
     </div>
     </footer>
