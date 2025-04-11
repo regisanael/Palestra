@@ -147,7 +147,7 @@ $evento = [
                         </div>
                     </div>
                 </div>
-                <!-- palestrante 2 Rafael Couto-->
+                <!-- palestrante 2 Ricardo Amorim-->
                 <div class="col-md-4">
                     <div class="card shadow service-card">
                         <div class="card-body text-center p-4">
@@ -155,7 +155,7 @@ $evento = [
                                 <i class="fas fa-users fa-2x"></i>
                             </div>
                             <img src="ricardo amorim 2.jfif" alt="">
-                            <h3 class="card-title h5 mb-3">Rafael Couto</h3>
+                            <h3 class="card-title h5 mb-3">Ricardo Amorim</h3>
                             <p class="card-text">Otimizamos o potencial da sua equipe com programas de desenvolvimento,
                                 treinamento e cultura organizacional.</p>
                             <a href="#" class="btn btn-outline-success mt-3">Quem Sou</a>
