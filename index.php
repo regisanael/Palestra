@@ -263,16 +263,7 @@ $evento = [
             </div>
         </div>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                            <span class="visually-hidden">Próximo</span>
-                        </button>
+                      
                     </div>
                 </div>
             </div>
