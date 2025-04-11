@@ -139,11 +139,6 @@ $evento = [
                             <p class="card-text">Desenvolvendo estratégias personalizadas para impulsionar o crescimento
                                 e a rentabilidade da sua empresa.</p>
                             <a href="#" class="btn btn-outline-primary mt-3">Quem Sou</a>
-                            <?php foreach ($palestrantes as $palestante) {
-                                $status = $palestante['confirmado'] ? "Confirmado" : "Não Confirmado";
-                                echo "Nome: " . $palestrante['nome'] . "- Status: " . $status . "<br>";
-                            }
-                            ?>
                         </div>
                     </div>
                 </div>
@@ -263,17 +258,7 @@ $evento = [
             </div>
         </div>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                            <span class="visually-hidden">Próximo</span>
-                        </button>
-                    </div>
+                        
                 </div>
             </div>
         </div>
@@ -291,7 +276,10 @@ $evento = [
         <div class="row gy-4">
             <div class="col-md-4">
                 <h5 class="text-white mb-3">ConsultTech</h5>
-                <p class="text-muted mb-3">Transformando desafios em oportunidades de negócio desde 2013.</p>
+                <p class="text-muted mb-3">nome:<br>
+    Data: 14 a 19 de Abril de 2025 <br>
+    "local" => "Status Eventos-Varginha",
+    "descrição" => "Evento focado para mostrar como funciona a Inatel e os nossos conteudos".</p>
                 <div class="social-icons">
                     <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
